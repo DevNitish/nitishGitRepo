@@ -1,0 +1,31 @@
+.nav li{
+	display:inline;
+	padding-right: 10px;
+}
+
+ul a{
+
+	text-decoration: none;
+}
+
+ul a:hover{
+	text-decoration:underline;
+	color: black;
+	font-size: 25px;
+
+	}
+
+form li{
+		list-style: none;
+		margin-bottom: 20px;
+		padding-left: 0px;
+	}
+form ul{
+	padding-left: 0px;
+}
+
+label {
+display: block;
+color: gray;
+font-family: sans-serif;
+}

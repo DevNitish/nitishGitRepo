@@ -1,0 +1,14 @@
+a{
+color: red; text-decoration:none
+}
+
+h1{
+
+	font-family:helvetica, sans-serif;
+	margin-left: 50px;
+}
+div{
+	width: 500px;
+	background: red;
+	margin:auto;
+}

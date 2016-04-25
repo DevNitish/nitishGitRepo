@@ -1,0 +1,27 @@
+body{
+
+	width: 600px;
+	margin: auto;
+
+}
+
+article img{
+
+	float: left;
+	margin-right: 20px;
+	padding-right:30px; 
+}
+
+.body{
+
+	
+	background: red;
+
+
+}
+.preview{
+	width: 570px;
+	float: right;
+	background: red;
+	
+}

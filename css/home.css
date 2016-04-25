@@ -6,3 +6,19 @@ h1{
 	height: 100px;
 
 }
+body{
+	margin: 0px;
+}
+h2{
+	color: red;
+}
+.box{
+
+	color: red;
+	margin: auto;
+	height: 100px;
+	width: 100px;
+	background: red;
+	position: relative;
+	right:20px;
+}

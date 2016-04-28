@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		
-		<!-- Website Title & Description for Search Engine purposes -->
-		<title></title>
-		<meta name="description" content="">
-		
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-		
-		<!-- Custom CSS -->
-		<link href="includes/css/styles.css" rel="stylesheet">
-		
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
-		
-	</head>
-	<body>
+<head>
+
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title></title>
+	<meta name="description" content="">
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
+
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
 	
 	<div id="container" id="main">
 		<div class="navbar navbar-fixed-top">
@@ -34,48 +34,49 @@
 
 				</button>
 				<!-- button for menu for small devices -->
-		<a href="#" class="navbar-brand"> <img src="images/logo.png" alt="My Website"></a>
+				<a href="#" class="navbar-brand"> <img src="images/logo.png" alt="My Website"></a>
 
-			<div class="nav-collapse collapse navbar-responsive-collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <stonge class="caret"></stonge></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Web Design</a></li>
-					<li><a href="#">Web Dev</a></li>
-					<li><a href="#">Web Design</a></li>
-					<li class="divider"></li>
-					<li class="dropdown-header"><a href="#">More</a></li>
-					<li><a href="#">HTML</a></li>
-					<li><a href="#">CSS</a></li>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<stonge class="caret"></stonge></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">Web Dev</a></li>
+								<li><a href="#">Web Design</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header"><a href="#">More</a></li>
+								<li><a href="#">HTML</a></li>
+								<li><a href="#">CSS</a></li>
+							</ul>
+							<!-- end dropdown menu -->
+
+						</li>
 					</ul>
-				<!-- end dropdown menu -->
+					<form action="" class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search here" id="searchInput">
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 
-				</li>
-			</ul>
-			<form action="" class="navbar-form pull-left">
-				<input type="text" class="form-control" placeholder="Search here" id="searchInput">
-				<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form>
+					<!-- navbar-form -->
+					<ul class="nav navbar-nav pull-right">
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-user">My Account</span> 
+							<stonge class="caret"></stonge></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>Setting</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-refresh"></span>Update profile</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><span class="glyphicon glyphicon-off"></span>Sign out</a></li>
+							</ul>
 
-			</form>
-			<!-- navbar-form -->
-			<ul class="nav navbar-nav pull-right">
-				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-user">My Account</span> 
-					<stonge class="caret"></stonge></a>
-				<ul class="dropdown-menu">
-					<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>Setting</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-refresh"></span>Update profile</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a></li>
-					<li class="divider"></li>
-					<li><a href="#"><span class="glyphicon glyphicon-off"></span>Sign out</a></li>
-				</ul>
+						</li>
 
-				</li>
-				
-			</ul>
-			<!-- nav pull-right -->
-		</div>
-		<!-- end nav-collapse -->
+					</ul>
+					<!-- nav pull-right -->
+				</div>
+				<!-- end nav-collapse -->
+			</div>
 		</div>
 		<!-- navbar end -->
 
@@ -83,100 +84,290 @@
 
 
 		<div class="carousel slide " id="myCarousel">
-		<!-- indicators -->
-		<ol class="carousel-indicators">
-			<li class="active" data-slide="0" data-target="#myCarousel"></li>
-			<li class="active" data-slide="1" data-target="#myCarousel"></li>
-			<li class="active" data-slide="3" data-target="#myCarousel"></li>
-		</ol>
-		<!-- Wrapper for slide -->
-		<div class="carousel-inner">
-			<div class="item active" id="slide1">
-				<div class="carousel-caption">
-					<h4>Bootstrap 3</h4>
-					<p>Learn cool new Bootstrap 3</p>
-				</div><!--coarusel-caption-->
+			<!-- indicators -->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide="0" data-target="#myCarousel"></li>
+				<li class="active" data-slide="1" data-target="#myCarousel"></li>
+				<li class="active" data-slide="3" data-target="#myCarousel"></li>
+			</ol>
+			<!-- Wrapper for slide -->
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<h4>Bootstrap 3</h4>
+						<p>Learn cool new Bootstrap 3</p>
+					</div><!--coarusel-caption-->
 
-			</div><!-- end Item-->
+				</div><!-- end Item-->
 
-			<div class="item" id="slide2">
-				
-				<div class="carousel-caption">
-					<h4>Learn CSS in 5 Hours</h4>
-					<p>Just try our courses for once</p>
-				</div><!--coarusel-caption-->
+				<div class="item" id="slide2">
 
-			</div><!-- end Item-->
+					<div class="carousel-caption">
+						<h4>Learn CSS in 5 Hours</h4>
+						<p>Just try our courses for once</p>
+					</div><!--coarusel-caption-->
 
-			<div class="item" id="slide3">
-				<div class="carousel-caption">
-					<h4>Learn HTML in 10 days</h4>
-					<p>Be an expert in HTML in 10 days</p>
-				</div><!--coarusel-caption-->
+				</div><!-- end Item-->
 
-			</div><!-- end Item-->
-		</div>
-		<!-- end carousel-inner -->
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>Learn HTML in 10 days</h4>
+						<p>Be an expert in HTML in 10 days</p>
+					</div><!--coarusel-caption-->
 
-		<!-- controls -->
-		<a href="#myCarousel" class="left carousel-control" data-slide="prev"> <span class="icon-prev"></span></a>
-		<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
-		<!-- <a href="#myCarousel" class="right carousel-control" data-slide="next "> <span class="icon-next"></span></a> -->
-		<!-- control ends -->
+				</div><!-- end Item-->
+			</div>
+			<!-- end carousel-inner -->
+
+			<!-- controls -->
+			<a href="#myCarousel" class="left carousel-control" data-slide="prev"> <span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+			<!-- <a href="#myCarousel" class="right carousel-control" data-slide="next "> <span class="icon-next"></span></a> -->
+			<!-- control ends -->
 		</div>
 		<!-- my carousel -->
-		
 
 		<div class="row" id="bigCallout">
-			
-		</div>
-		<!-- bigCallout -->
+			<div class="col-12">
+
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+
+					<h4>Success!</h4>
+					<p>You just made this element display by using jQuery. Click the "x" in the top right corner to close this bad boy.</p>
+				</div><!-- end alert -->
+
+				<!-- Visible only on small devices -->
+				<div class="well well-small visible-sm">
+					<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+				</div><!-- end well-small -->
+
+				<div class="well">
+					<div class="page-header">
+						<h1>A Fancy Header <small>A subheader for extra awesome.</small></h1>
+					</div><!-- end page-header -->
+
+					<p class="lead">Some solid leading copy will help get your users engaged. Use this area to come up with something real nice. Know what I'm sayin?</p>
+
+					<a href="" class="btn btn-large btn-primary" id="alertMe">Click a nice big button</a>
+					<a href="" class="btn btn-large btn-link">or a secondary link</a>
+				</div><!-- end well -->
+
+			</div><!-- end col-12 -->
+		</div><!-- end bigCallout -->
+
 		
+
 
 		<div class="row" id="featuresHeading">
-			
+			<div class="col-12">
+				<h2>More Features</h2>
+				<p class="lead"> My name is nitish kumar. I am working in Wipro.</p>
+
+			</div>
+			<!-- end col12 -->
 		</div>
 		<!-- featureHeading -->
-		
-		
-		<div class="row" id="features">
-			
+
+
+		<div class="row col-12" id="features">
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title"> HTML</h3>
+					</div>
+					<img src="images/badge_html5.jpg" alt="" class="img-circle">
+					<p> My name is nitish kumar. I am working in Wipro.</p>
+					<a href="https://www.google.co.in/" target="_black" class="btn btn-warning btn-block"> Learn HTML5</a>
+					
+				</div>
+				<!-- panel 1 -->
+
+			</div>
+			<!-- smallcol4  feature-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">CSS</h3>
+					</div>
+					
+					<img src="images/badge_css3.jpg" alt=""  class="img-circle">
+					<p> My name is nitish kumar. I am working in Wipro.</p>
+					<a href="#" target="_black" class="btn btn-danger btn-block"> CSS 3</a>
+					
+				</div>
+				<!-- panel 1 -->
+
+			</div>
+
+			<!-- smallcol4  feature-->
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title"> Bootstrap</h3>
+					</div>
+					<img src="images/badge_bootstrap.jpg" alt="badge_bootstrap"  class="img-circle" >
+					<p> My name is nitish kumar. I am working in Wipro.</p>
+					<a href="#" target="_black" class="btn btn-info btn-block"> Learn Bootstrap</a>
+					
+
+				</div>
+				<!-- panel 1 -->
+
+			</div>
+			<!-- smallcol4  feature-->
 		</div>
 		<!-- features -->
-		
-		
+
+
 		<div class="row" id="moreInfo">
-			
+			<div class="col-sm-6">
+				<h3>Neat Tab</h3>
+				<div class="tabble">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+						<li ><a href="#tab2" data-toggle="tab">Section 2</a></li>
+
+
+					</ul>
+					<div class="tab-content">
+						
+						<div class="tab-pane active" id="tab1">
+							<h4><span class="glyphicon glyphicon-map-marker"> </span>Our Location <small> More Like or favourite surf spot</small></h4>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.118871620954!2d77.23883161508313!3d28.656159182408427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xbaefd7f0e1cd37e4!2sLahore+Gate!5e0!3m2!1sen!2sin!4v1461834627972" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<p>Welcome to RandomText
+								RandomText is a tool designers and developers can use to quickly grab dummy text in either Lorem Ipsum or Gibberish format.
+								There are a number of features that make RandomText a little different from other Lorem Ipsum dummy text generators you may find around the web....
+								Grab HTML or just plain text - even save generated text as files:</p><p>
+								Don't waste time copying text and then more time marking it up in HTML manually, just hit View HTML Code and then Copy to Clipboard!
+								Use the address bar to create a query:
+								Don't waste more time fiddling with form options!  RandomText allows you to get at your text quicker by using the URL to construct a query...
+
+
+							</p>
+						</div>
+						<!-- end tab-pane 1 -->
+						<div class="tab-pane" id="tab2">
+							
+							<h4> A left floated Image <small>Using plcehold</small></h4>
+							<img src="http://placehold.it/140" alt="plceholder" class="thumbnail pull-left">
+
+							<p>Welcome to RandomText
+								RandomText is a tool designers and developers can use to quickly grab dummy text in either Lorem Ipsum or Gibberish format.
+								There are a number of features that make RandomText a little different from other Lorem Ipsum dummy text generators you may find around the web....
+								Grab HTML or just plain text - even save generated text as files:</p><p>
+								Don't waste time copying text and then more time marking it up in HTML manually, just hit View HTML Code and then Copy to Clipboard!
+								Use the address bar to create a query:
+								Don't waste more time fiddling with form options!  RandomText allows you to get at your text quicker by using the URL to construct a query...
+
+
+							</p>
+							<hr>
+
+							<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click for a modal Window</a>
+							<div class="modal fade "  id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title"> Modal Window</h4>
+										</div>
+										<!-- modal header -->
+										<div class="modal-body">
+											<h4> Modal text </h4>
+											<p> more text Nitish  more text Nitish  more text Nitish more text Nitish more text Nitish
+												more text Nitish more text Nitish more text Nitish more text Nitish
+												more text Nitish more text Nitish more text Nitish more text Nitish</p>
+
+												<h4>Popover</h4>
+												<a href="#" class="btn btn-danger">Don't Click it</a>
+												<h4>Tooltip</h4>
+												<a href="#">This link</a> should have link <a href="#">so do this</a>
+												<hr>
+												<p><small class="text-muted">This is dummy form</small></p>
+												<form class="form-horizontal">
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputName" type="text">Name</label>
+
+														<div class= "col-lg-10">
+															<input class= "form-control" id="inputName" placeholder="Name" type="text">
+														</div>
+													</div>
+
+													<div class="form-group">
+
+														<label class="col-lg-2 control-label" for="inputName" type="text">Email</label>
+
+														<div class= "col-lg-10">
+															<input class= "form-control" id="inputEmail" placeholder="Email" type="email">
+														</div>
+													</div>
+
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputMessage" type="text">Message</label>
+
+														<div class= "col-lg-10">
+															<textarea class="form-control" id="inputMessage" placeholder="Message" row="3"></textarea>
+
+															<button class="btn btn-success pull-right" type="submit"> Send!</button>
+
+														</div>
+													</div>
+
+												</form>
+											</div>
+											<!-- modal body -->
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+
+												<button type="button"  data-dismiss="modal" class="btn btn-primary" >Close</button>
+											</div>
+
+										</div>
+										<!-- modal content -->
+									</div>
+									<!-- modal dialog -->
+								</div>
+								<!-- end modal -->
+							</div>
+							<!-- end tab 2 -->
+						</div>
+						<!-- tab content -->
+					</div>
+					<!-- tabble -->
+				</div>
+				<!-- col samll 6 -->
+			</div>
+			<!-- moreInfo -->
+
+
+			<div class="row" id="moreCourses">
+
+
+			</div>
+			<!-- moreCourses -->
 		</div>
-		<!-- moreInfo -->
+		<!-- end of container -->
 
 
-		<div class="row" id="moreCourses">
-			
+		<footer>
 
-		</div>
-		<!-- moreCourses -->
-	</div>
-	<!-- end of container -->
+		</footer>
+		<!-- All Javascript at the bottom of the page for faster page loading -->
 
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
 
-	<footer>
-		
-	</footer>
-	<!-- All Javascript at the bottom of the page for faster page loading -->
-		
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-	
-	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	
-	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
-	
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="includes/js/script.js"></script>
+
 	</body>
-</html>
+	</html>
 

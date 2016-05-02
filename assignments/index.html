@@ -13,6 +13,8 @@
 	<!-- Bootstrap CSS -->
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
 
 	<!-- Custom CSS -->
 	<link href="includes/css/styles.css" rel="stylesheet">
@@ -33,7 +35,9 @@
 					<span class="icon-bar"></span>
 				</button>
 
-				<a class="navbar-brand" href="#"><img src="images/logo.jpg" height="22px" width="122px"alt="Your Logo"></a>
+<!-- 				<a class="navbar-brand" href="#"><img src="images/logo.jpg" id="logo"alt="LOGO"></a>
+ -->
+  <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><img class="img-responsive2" src="images/logo.png"></a>
 
 				<div class="nav-collapse collapse navbar-responsive-collapse">
 					<ul class="nav navbar-nav">
@@ -129,9 +133,9 @@
 								<h1>Time Travel <small>Nothing is better than us!</small></h1>
 							</div><!-- end page-header -->
 
-							<p class="lead">Some solid leading copy will help get your users engaged. Use this area to come up with something real nice. Know what I'm sayin?</p>
+							<p class="lead">Time Travel has over 10 years of experience as a travel agency providing amazing deals for your dream vacation.</p>
 
-							<a href="" class="btn btn-large btn-primary" id="alertMe">Check out new places</a>
+							<a href="places.html" class="btn btn-large btn-primary" id="alertMe">Check out new places</a>
 						</div><!-- end well -->
 
 					</div><!-- end col-12 -->
@@ -155,21 +159,21 @@
 				<div class="item active" id="slide1">
 					<div class="carousel-caption">
 						<h4 > <span id="myText">Goa</span></h4>
-						<p><span id="myText">Learn how to build your first responsive website with the brand new Twitter Bootstrap 3!</span></p>
+						<p><span id="myText">Goa is a state in western India with coastlines stretching along the Arabian Sea.</span></p>
 					</div><!-- end carousel-caption-->
 				</div><!-- end item -->
 
 				<div class="item" id="slide2">
 					<div class="carousel-caption">
 						<h4><span id="myText">Pondicherry</span></h4>
-						<p id="myText">PSD to HTML5 &amp; CSS3 is a popular Udemy course that has helped thousands of aspiring web designers launch their web design career.</p>
+						<p id="myText">Pondicherry (or Puducherry), a French colonial settlement in India until 1954, is now a Union Territory town bounded by the southeastern Tamil Nadu state</p>
 					</div><!-- end carousel-caption-->
 				</div><!-- end item -->
 
 				<div class="item" id="slide3">
 					<div class="carousel-caption">
 						<h4><span id="myText">Shimla</span></h4>
-						<p id="myText">Learn how to buy a perfect domain name and hosting package, and get your website live on the web with ease.</p>
+						<p id="myText">Shimla is the capital of the northern Indian state of Himachal Pradesh, in the Himalayan foothills</p>
 					</div><!-- end carousel-caption-->
 				</div><!-- end item -->
 			</div><!-- carousel-inner -->
@@ -187,28 +191,37 @@
 		<div class="row" id="featuresHeading">
 			
 			<div class="col-12">
+				
 				<div class="well">
+					<h3>Why Time Travel, only? </h3>
 					<div class="navbar">
 						<div class="col-1">
-							<h4>1</h4>
+							<h2 class="prime">1</h2>
 						</div>
 
 						<div class="col-3">
-							<p>Thisiis is s iasdius
-								Thisiis is s iasdius
-								Thisiis is s iasdiusThisiis is s iasdius</p>
+							<b>
+							    <p>We have the best offer online.</p>
+          						<p>Offers here you won't find any where else</p>
+          					</b>
 							</div>
 							<div class="col-1">
-								<h4>2</h4>
+								<h2>2</h2>
 							</div>
 							<div class="col-3">
-								<p>Thisiis is s iasdius</p>
+									<b>
+								    <p>24 Hours Customer care support</p>
+          							<p>Ready to help always</p>
+          						</b>
 							</div>
 							<div class="col-1">
-								<h4>3</h4>
+								<h2 class="img-circle">3</h2>
 							</div>
 							<div class="col-3">
-								<p>Thisiis is s iasdius</p>
+							<b>
+							<p>50% discount on for first trip.</p>
+          					<p>We care for you.</p>
+          					</b>
 							</div>
 
 
@@ -228,7 +241,7 @@
 							<h3 class="panel-title"> Kerala</h3>
 						</div>
 						<img src="images/badge_html5.jpg" id ="mypic"alt="Kerala" class="img-circle">
-						<p> My name is nitish kumar. I am working in Wipro.</p>
+						<p> Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined beaches and its backwaters, a network of canals popular for cruises.</p>
 						<a href="https://www.google.co.in/" target="_black" class="btn btn-warning btn-block"> Attraction of the month</a>
 
 					</div>
@@ -244,7 +257,7 @@
 						</div>
 
 						<img src="images/badge_css3.jpg" alt="Goa"  id ="mypic" class="img-circle">
-						<p> My name is nitish kumar. I am working in Wipro.</p>
+						<p> Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 16th-century churches and the area&#39;s tropical spice plantations.</p>
 						<a href="#" target="_black" class="btn btn-danger btn-block"> All time favourite </a>
 
 					</div>
@@ -255,17 +268,6 @@
 				<!-- smallcol 6 feature-->
 
 			</div>
-
-
-			<div class="row" id="moreInfo">
-
-			</div><!-- end row -->
-
-
-			<div class="row" id="moreCourses">
-
-			</div><!-- end row -->
-
 
 
 		</div>
@@ -279,17 +281,17 @@
 					</div>
 					<div class="col-sm-4">
 						<h6>About us</h6>
-						<p> The Taj Mahal is more than just a mausoleum - it is has been described by the poet Rabindranath Tagore as a "teardrop on the cheek of eternity".
-							As an expression of the height of the Mughal dynasty's architectural genius in the Indian subcontinent, 
+						<p> Time Travel has over 60 years of experience as a travel agency providing amazing deals for your dream vacation with amazing discounts.
 						</p>
+						<p>In Time Travel we take care of everything from booking a cab to booking a hotel. We are always happy to help. </p>
 					</div>
 					<div class="col-sm-2">
 						<h6>Navigation</h6>
 						<ul class="unstyle">
 							<li><a href="#">About us</a></li>
-							<li><a href="#">HOme</a></li>
+							<li><a href="#">Home</a></li>
 							<li><a href="#">Services</a></li>
-							<li><a href="Offers"> offers</a></li>
+							<li><a href="Offers">Offers</a></li>
 						</ul>
 
 					</div>
@@ -297,16 +299,16 @@
 						
 						<h6>Follow us</h6>
 						<ul class="unstyle">
-							<li><a href="#">Facebook</a></li>
-							<li><a href="#">twitter</a></li>
-							<li><a href="#">Wattpad</a></li>
-							<li><a href="Offers">Instagram</a></li>
+							<li><span><img src="images/fb.png" alt="facebook"></span><a href="#">Facebook</a></li>
+							<li><span><img src="images/twitter.png" alt="twitter"></span><a href="#">twitter</a></li>
+							<li><span><img src="images/yt.png" alt="youtube"></span><a href="#">Youtube</a></li>
+							<li><span><img src="images/insta.png" alt="insta"></span><a href="">Instagram</a></li>
 						</ul>
 					</div>
 					<div class="col-sm-3">
-						<form class="form-group">
+						<form class="form-group navbar-form pull-left">
 							<input type="text" class="form-control " placeholder="Subscribe news letter" id="news">
-						<button type="submit" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-envelope"></span>
+						<button type="submit" class="btn btn-primary "><span class="glyphicon glyphicon-envelope"></span>
 						</button>
 							
 						</form>

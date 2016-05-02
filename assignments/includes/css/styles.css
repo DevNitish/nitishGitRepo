@@ -60,6 +60,13 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
+   #myText{
+      background-color: #6699ff;
+   }
+   .unstyle{
+      list-style: none;
+      padding-left:0;
+   }
      footer{
       background: #333;
       color: #eee;

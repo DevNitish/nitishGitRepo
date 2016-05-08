@@ -1,6 +1,6 @@
 var fs = require("fs");
 
-var data = fs.readFileSync('India2011.csv');
+var data = fs.readFileSync('indiaTest.csv');
 var stringData=data.toString();
 var arrayOne= stringData.split('\r\n');
 
@@ -26,4 +26,4 @@ for (i = 1; i < noOfRow-1; i++) {
 
 console.log( jArray);
 
-fs.writeFile( "india2011.json", JSON.stringify( jArray ), "utf8");
+fs.writeFile( "indiaTest.json", JSON.stringify( jArray ), "utf8");

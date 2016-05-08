@@ -44,6 +44,7 @@ readerStream.on('data', function(chunk) {
 });
 
 readerStream.on('end',function(){
+	var 
    console.log(data);
    console.log("Program ends");
 });

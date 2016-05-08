@@ -3,7 +3,7 @@ var fs = require("fs");
 var data = fs.readFileSync('test.csv');
 
 var stringData=data.toString();
-var arrayOne= stringDatanj.split('/r/n');
+var arrayOne= stringDatanj.split('\r\n');
 
 var header=arrayOne[0].split(',');
 var noOfLines=arrayOne.length;

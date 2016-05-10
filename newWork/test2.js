@@ -26,4 +26,4 @@ for (i = 1; i < noOfRow-1; i++) {
 
 console.log( jArray);
 
-fs.writeFile( "indiaTest.json", JSON.stringify( jArray ), "utf8");
+fs.writeFile( "indiaTest2.json", JSON.stringify( jArray ), "utf8");

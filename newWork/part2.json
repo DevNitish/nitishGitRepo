@@ -1,0 +1,43 @@
+[{
+	"area": "State - ARUNACHAL PRADESH",
+	"IlliterateMale": 274044,
+	"LiterateMale": 439868,
+	"IlliterateFemale": 343678,
+	"LiterateFemale": 326137
+}, {
+	"area": "State - NAGALAND",
+	"IlliterateMale": 300692,
+	"LiterateMale": 723957,
+	"IlliterateFemale": 335376,
+	"LiterateFemale": 618477
+}, {
+	"area": "State - MANIPUR",
+	"IlliterateMale": 398728,
+	"LiterateMale": 1039858,
+	"IlliterateFemale": 548590,
+	"LiterateFemale": 868618
+}, {
+	"area": "State - MIZORAM",
+	"IlliterateMale": 116810,
+	"LiterateMale": 438529,
+	"IlliterateFemale": 132221,
+	"LiterateFemale": 409646
+}, {
+	"area": "State - TRIPURA",
+	"IlliterateMale": 373007,
+	"LiterateMale": 1501369,
+	"IlliterateFemale": 496127,
+	"LiterateFemale": 1303414
+}, {
+	"area": "State - MEGHALAYA",
+	"IlliterateMale": 577953,
+	"LiterateMale": 913879,
+	"IlliterateFemale": 603931,
+	"LiterateFemale": 871126
+}, {
+	"area": "State - ASSAM",
+	"IlliterateMale": 5370804,
+	"LiterateMale": 10568639,
+	"IlliterateFemale": 6656795,
+	"LiterateFemale": 8609338
+}]

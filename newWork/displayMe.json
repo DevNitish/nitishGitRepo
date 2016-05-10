@@ -1,0 +1,211 @@
+[{
+	"State - JAMMU & KASHMIR": {
+		"Literate - Persons": 7067233,
+		"Illiterate - Persons": 5474069,
+		"Total - Persons": 12541302
+	}
+}, {
+	"State - HIMACHAL PRADESH": {
+		"Literate - Persons": 5039736,
+		"Illiterate - Persons": 1824866,
+		"Total - Persons": 6864602
+	}
+}, {
+	"State - PUNJAB": {
+		"Literate - Persons": 18707137,
+		"Illiterate - Persons": 9036201,
+		"Total - Persons": 27743338
+	}
+}, {
+	"State - CHANDIGARH": {
+		"Literate - Persons": 805438,
+		"Illiterate - Persons": 250012,
+		"Total - Persons": 1055450
+	}
+}, {
+	"State - UTTARAKHAND": {
+		"Literate - Persons": 6880953,
+		"Illiterate - Persons": 3205339,
+		"Total - Persons": 10086292
+	}
+}, {
+	"State - HARYANA": {
+		"Literate - Persons": 16598988,
+		"Illiterate - Persons": 8752474,
+		"Total - Persons": 25351462
+	}
+}, {
+	"State - NCT OF DELHI": {
+		"Literate - Persons": 12737767,
+		"Illiterate - Persons": 4050174,
+		"Total - Persons": 16787941
+	}
+}, {
+	"State - RAJASTHAN": {
+		"Literate - Persons": 38275282,
+		"Illiterate - Persons": 30273155,
+		"Total - Persons": 68548437
+	}
+}, {
+	"State - UTTAR PRADESH": {
+		"Literate - Persons": 114397555,
+		"Illiterate - Persons": 85414786,
+		"Total - Persons": 199812341
+	}
+}, {
+	"State - BIHAR": {
+		"Literate - Persons": 52504553,
+		"Illiterate - Persons": 51594899,
+		"Total - Persons": 104099452
+	}
+}, {
+	"State - SIKKIM": {
+		"Literate - Persons": 444952,
+		"Illiterate - Persons": 165625,
+		"Total - Persons": 610577
+	}
+}, {
+	"State - ARUNACHAL PRADESH": {
+		"Literate - Persons": 766005,
+		"Illiterate - Persons": 617722,
+		"Total - Persons": 1383727
+	}
+}, {
+	"State - NAGALAND": {
+		"Literate - Persons": 1342434,
+		"Illiterate - Persons": 636068,
+		"Total - Persons": 1978502
+	}
+}, {
+	"State - MANIPUR": {
+		"Literate - Persons": 1908476,
+		"Illiterate - Persons": 947318,
+		"Total - Persons": 2855794
+	}
+}, {
+	"State - MIZORAM": {
+		"Literate - Persons": 848175,
+		"Illiterate - Persons": 249031,
+		"Total - Persons": 1097206
+	}
+}, {
+	"State - TRIPURA": {
+		"Literate - Persons": 2804783,
+		"Illiterate - Persons": 869134,
+		"Total - Persons": 3673917
+	}
+}, {
+	"State - MEGHALAYA": {
+		"Literate - Persons": 1785005,
+		"Illiterate - Persons": 1181884,
+		"Total - Persons": 2966889
+	}
+}, {
+	"State - ASSAM": {
+		"Literate - Persons": 19177977,
+		"Illiterate - Persons": 12027599,
+		"Total - Persons": 31205576
+	}
+}, {
+	"State - WEST BENGAL": {
+		"Literate - Persons": 61538281,
+		"Illiterate - Persons": 29737834,
+		"Total - Persons": 91276115
+	}
+}, {
+	"State - JHARKHAND": {
+		"Literate - Persons": 18328069,
+		"Illiterate - Persons": 14660065,
+		"Total - Persons": 32988134
+	}
+}, {
+	"State - ODISHA": {
+		"Literate - Persons": 26742595,
+		"Illiterate - Persons": 15231623,
+		"Total - Persons": 41974218
+	}
+}, {
+	"State - CHHATTISGARH": {
+		"Literate - Persons": 15379922,
+		"Illiterate - Persons": 10165276,
+		"Total - Persons": 25545198
+	}
+}, {
+	"State - MADHYA PRADESH": {
+		"Literate - Persons": 42851169,
+		"Illiterate - Persons": 29775640,
+		"Total - Persons": 72626809
+	}
+}, {
+	"State - GUJARAT": {
+		"Literate - Persons": 41093358,
+		"Illiterate - Persons": 19346334,
+		"Total - Persons": 60439692
+	}
+}, {
+	"State - DAMAN & DIU": {
+		"Literate - Persons": 188406,
+		"Illiterate - Persons": 54841,
+		"Total - Persons": 243247
+	}
+}, {
+	"State - DADRA & NAGAR HAVELI": {
+		"Literate - Persons": 223230,
+		"Illiterate - Persons": 120479,
+		"Total - Persons": 343709
+	}
+}, {
+	"State - MAHARASHTRA": {
+		"Literate - Persons": 81554290,
+		"Illiterate - Persons": 30820043,
+		"Total - Persons": 112374333
+	}
+}, {
+	"State - ANDHRA PRADESH": {
+		"Literate - Persons": 50556760,
+		"Illiterate - Persons": 34024017,
+		"Total - Persons": 84580777
+	}
+}, {
+	"State - KARNATAKA": {
+		"Literate - Persons": 40647322,
+		"Illiterate - Persons": 20447975,
+		"Total - Persons": 61095297
+	}
+}, {
+	"State - GOA": {
+		"Literate - Persons": 1165487,
+		"Illiterate - Persons": 293058,
+		"Total - Persons": 1458545
+	}
+}, {
+	"State - LAKSHADWEEP": {
+		"Literate - Persons": 52553,
+		"Illiterate - Persons": 11920,
+		"Total - Persons": 64473
+	}
+}, {
+	"State - KERALA": {
+		"Literate - Persons": 28135824,
+		"Illiterate - Persons": 5270237,
+		"Total - Persons": 33406061
+	}
+}, {
+	"State - TAMIL NADU": {
+		"Literate - Persons": 51837507,
+		"Illiterate - Persons": 20309523,
+		"Total - Persons": 72147030
+	}
+}, {
+	"State - PUDUCHERRY": {
+		"Literate - Persons": 957309,
+		"Illiterate - Persons": 290644,
+		"Total - Persons": 1247953
+	}
+}, {
+	"State - ANDAMAN & NICOBAR ISLANDS": {
+		"Literate - Persons": 294281,
+		"Illiterate - Persons": 86300,
+		"Total - Persons": 380581
+	}
+}]

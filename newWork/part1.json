@@ -1,1 +1,13 @@
-[{"gender":"Male","count":623270258},{"gender":"Female","count":587584719}]
+[{
+	"gender": "Literate - Males",
+	"count": 434763622
+}, {
+	"gender": "Illiterate - Males",
+	"count": 188506636
+}, {
+	"gender": "Literate Fmales",
+	"count": 328875190
+}, {
+	"gender": "Illiterate Fmales",
+	"count": 258709529
+}]

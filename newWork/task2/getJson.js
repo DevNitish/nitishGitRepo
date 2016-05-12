@@ -6,101 +6,109 @@ const data = readline.createInterface({
 });
 
 
-var headLine = [];
-var JSON_One = [];
-
-var JSON_Two = [];
-var JSON_Three = [];
-var arr = [];
+var firstLine=1;
+var header=[];
+var yi, //year index
+    pi,  //primary index
+    di,
+    ai; //description type
 var count = 0;
+var countO=0;
+var countU=0;
+var jArray=[];
+for (var i = 2001; i <=2016; i++) {
+  var obj={};
+  obj["Year"]=i;
+  obj["Under500"]=0;
+   obj["Over500"]=0;
+  jArray.push(obj);
+};
+var jArray2=[];
+for (var i = 2001; i <=2016; i++) {
+  var obj={};
+  obj["Year"]=i;
+  obj["Arrested"]=0;
+   obj["NotArrested"]=0;
+  jArray2.push(obj);
+};
+
+var len=jArray.length;
+
+
+
 data.on('line', (line) => {
+  var newLine=line.split(/,(?=(?:(?:[^"]*"){2})*[^*]*$)/);
+ if(firstLine==1){
+    headers=newLine;
+    yi=headers.indexOf("Year");
+    console.log(yi);
+    pi = headers.indexOf("Primary Type");
+    di =headers.indexOf("Description");
+    ai =headers.indexOf("Arrest");
+    
+    //console.log(" loop 0 pi"+newLine[5]+" des"+ newLine[17]);
+     firstLine=0;
+  }else {
+      firstJson(newLine);
+     // secondJson(newLine)
 
-//printing content of line
- console.log('Line from file:', line);
+  }//main else ends
 
-// // header line
-// if(headLine.length===0)
-// {
-//   headLine = line.toString().split(",");
-  
-// }
+}).on('close',function(){    
+    //******to write json file
+    //fs.writeFile( "getJson.json", JSON.stringify( jArray ), "utf8");
+    //fs.writeFile( "getJson2.json", JSON.stringify( jArray2 ), "utf8");
 
-//reading currentLine
-//var currentLine = [];
-//currentLine = line.toString().split(",");
-// console.log(currentLine);
-
-//create JSON_One
-//createJsonOne(currentLine);
-
-//create JSON_Two
-//createJsonTwo(currentLine);
-
-//create JSON_Three
-//createJsonThree(currentLine);
-
-}).on('close',function(){                           //******start here
-
-  // JSON_One = JSON.stringify(JSON_One);
-  //fs.writeFile('indiaV1.json',JSON.stringify(JSON_One));
-  // fs.writeFile('india-urban-rural-population.json',JSON.stringify(JSON_One));
-  // console.log(JSON_One);
-
-  // JSON_Two = JSON.stringify(JSON_Two);
-  //fs.writeFile('india2.json',JSON.stringify(JSON_Two));
-  // console.log(JSON_Two);
-
-  // JSON_Three
-
+    //to display in log
+    console.log(jArray);
 });
 
-//Create JSON_One with required filters and then calling createObjOne to create Object and
-// the return item is pushed into the JSON_One array in desired format
-// function createJsonOne(currentLine)
-// {
-//   if(currentLine[0]=="India")
-//   { var obj={};
-//       obj["Year"]=currentLine[4];
-//     if(currentLine[2]=="Rural population (% of total population)")
-//     {
-//       // console.log(currentLine);
-//        obj = {
-//         "Area":"Rural population (% of total population)",
+//Function to make json one
+function firstJson(newLine){
 
-//         "Value": currentLine[5]
-//       };
+     if((newLine[pi] =="THEFT") && (newLine[di] == "OVER $500")){
+      
+      for (var i = 0; i < len; i++) {
+       if(jArray[i].Year==newLine[yi]){
+        jArray[i].Over500+=1;
+          break;            
+          }
+      }
+     }else{
 
-//         // console.log(typeof(createObjOne(currentLine)));
-//           }
-//     else if(currentLine[2]=="Urban population (% of total)")
-//     {
-//       obj = {
-//         "Area":"Urban population (% of total)",
+      if((newLine[pi] == "THEFT") && (newLine[di] == "$500 AND UNDER")){
+      for (var i = 0; i < len; i++) {
+       if(jArray[i].Year==newLine[yi]){
+        jArray[i].Under500+=1;
+          break;
+          }
+      }
+     }
+   }//sub else
+}//end fist json
 
-//         "Value": currentLine[5]
-//       };
 
-//     //  JSON_One[1]["value"].push(createObjOne(currentLine));
-//     }
-//       JSON_One.push(obj);
-//   }
-// }
 
-//create object as per JSON_One requirements
+//Function to make json two
+function secondJson(newLine){
+    
+     if((newLine[pi] =="ASSAULT") && (newLine[ai] == "true")){
+      
+      for (var i = 0; i < len; i++) {
+       if(jArray2[i].Year==newLine[yi]){
+        jArray2[i].Arrested+=1;
+          break;            
+          }
+      }
+     }else{
 
-// //create JSON_Two
-// function createJsonTwo(currentLine)
-// {
-//   if(currentLine[0]==="India")
-//   {
-//     if(currentLine[2]==="Urban population growth (annual %)")
-//     {
-//       JSON_Two.push(createObjOne(currentLine)); //called createObjOne because the object here also requires same attributes
-//     }
-//   }
-// }
-//
-// function createJsonThree(currentLine)
-// {
-//
-// }
+      if((newLine[pi] == "ASSAULT") && (newLine[ai] =="false")){
+      for (var i = 0; i < len; i++) {
+       if(jArray2[i].Year==newLine[yi]){
+        jArray2[i].NotArrested+=1;
+          break;
+          }
+      }
+     }
+   }//sub else
+}//end second json

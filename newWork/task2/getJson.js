@@ -11,7 +11,8 @@ var header=[];
 var yi, //year index
     pi,  //primary index
     di,
-    ai; //description type
+    ai,
+    fi; //description type
 var count = 0;
 var countO=0;
 var countU=0;
@@ -31,8 +32,17 @@ for (var i = 2001; i <=2016; i++) {
    obj["NotArrested"]=0;
   jArray2.push(obj);
 };
-
+var jArray3=[];
 var len=jArray.length;
+var obj2={};
+obj2["CrimeType"]="NonIndexCrimes";
+obj2["count"]=0;
+jArray3.push(obj2);
+var obj3={};
+obj3["CrimeType"]="IndexCrimes";
+obj3["count"]=0;
+jArray3.push(obj3);
+
 
 
 
@@ -45,12 +55,14 @@ data.on('line', (line) => {
     pi = headers.indexOf("Primary Type");
     di =headers.indexOf("Description");
     ai =headers.indexOf("Arrest");
-    
+    fi =headers.indexOf("FBI Code");
+    console.log(jArray3);
     //console.log(" loop 0 pi"+newLine[5]+" des"+ newLine[17]);
      firstLine=0;
   }else {
-      firstJson(newLine);
+     // firstJson(newLine);
      // secondJson(newLine)
+     thridJson(newLine);
 
   }//main else ends
 
@@ -58,9 +70,11 @@ data.on('line', (line) => {
     //******to write json file
     //fs.writeFile( "getJson.json", JSON.stringify( jArray ), "utf8");
     //fs.writeFile( "getJson2.json", JSON.stringify( jArray2 ), "utf8");
+    fs.writeFile( "getJson3.json", JSON.stringify( jArray3 ), "utf8");
+
 
     //to display in log
-    console.log(jArray);
+    console.log(jArray3);
 });
 
 //Function to make json one
@@ -112,3 +126,25 @@ function secondJson(newLine){
      }
    }//sub else
 }//end second json
+
+//Function to make json three
+
+function thridJson(newLine){
+    
+    if (newLine[yi]=="2015") { 
+      if(newLine[fi] ==("01B"||"08A"||"08B"||"10"||"11"||"12"||"13"||"14"||"15"||"16"||"17"||"18"||"19"||"20"||"22"||"24"||"26") ){
+                  jArray3[0].count+=1;
+     }else {
+      if(newLine[fi] ==("01A"||"02"||"03"||"04A"||"04B"||"05"||"06"||"07"||"09")) {
+     
+        jArray3[1].count+=1;
+     
+
+          }
+     }//else end
+   }
+     // if(newLine[yi]=="2015"){
+     //  jArray4.push(newLine);
+     
+     // }
+}//end thrid json

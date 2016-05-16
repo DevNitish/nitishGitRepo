@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style type="text/css">
+	
+
+	div{
+		width:300px;
+		padding: 10px;
+		border: 2px;
+		margin: 25px;
+	}
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	</head>
+
+<body>
+	<h1>Head 1</h1>
+	<p>	Testing</p>
+	<p class="p2">	This is para 2</p>
+	<p> Name</p><input type="text">
+	<ul>
+		<li><a href="#">ONE</a></li>
+		<li><a href="#">TWO</a></li>
+		<li><a href="#">THREE</a></li>
+	</ul>
+	<div class="mydiv">
+		<h1>Header of mydiv</h1>
+	<p>	para in div</p>
+	<p class="p2">	This is para 2 of div</p>
+	<p> Address</p><input type="text">
+	<button>Call empty() on above paragraph</button>
+
+	</div>
+	<div class="myForm">
+		
+		<form action="">
+
+			<label>Enter name</label>
+			<input type="text" name="name">
+			<!-- 
+			<input type="button" value="Input Button">
+   			 <input type="checkbox"> -->
+
+		</form>
+	</div>
+	<img src="img.png">
+<script>
+// $('h1').css('color','red');
+// // $('ul li a:even').css('color','green');
+// $('h1').css('color','red');
+// $('ul li a:last').css('color','green');
+// $( "input" ).val( "Enter here" );
+// to input a dom element
+// $( ".myForm" ).append( "<p>Test Para appended by jQuery</p>" );
+// $( "p" ).append(  "<b>Hello</b>" );
+$('img').width('200px');
+// $('img').clone().appendTo(".mydiv");
+
+  $( "img" ).mouseenter(function(){
+
+
+  	$('.mydiv h1').text("OMG! Mouse has entered! ")
+  });
+  $( "img" ).mouseleave(function(){
+
+
+  	$('.mydiv h1').text("thank god! mouse is gone!")
+  });
+
+  $( ".mydiv" ).mouseenter(function(){
+
+
+  	$('.mydiv h1').text("OMG! Mouse has entered! ")
+  });
+  $( ".mydiv" ).mouseleave(function(){
+
+
+  	$('.mydiv h1').text("thank god! mouse is gone!")
+  });
+
+  //new
+  $('button').click(function(){
+
+  	$('p').empty().toggle();
+
+  });
+</script>
+</body>
+
+</html>

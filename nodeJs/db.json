@@ -1,0 +1,67 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicodeNitish"
+    },
+    {
+      "id": 2,
+      "title": "What up?",
+      "author": "Nitish Kumar"
+    },
+    {
+      "title": "Kumar",
+      "author": "sugam",
+      "id": 8
+    },
+    {
+      "hello": "This is hello",
+      "World": "This is world",
+      "id": 9
+    },
+    {
+      "hello": "This is hello",
+      "World": "This is world",
+      "id": 10
+    },
+    {
+      "hello": "This is hello",
+      "World": "This is world",
+      "id": 11
+    },
+    {
+      "hello": "This is hello",
+      "World": "This is world",
+      "id": 12
+    },
+    {
+      "UserName": "Nitish",
+      "Book": "Harry",
+      "id": 13
+    },
+    {
+      "UserName": "Nitish",
+      "Book": "Harry",
+      "id": 14
+    },
+    {
+      "UserName": "Nitish",
+      "Book": "Harry",
+      "id": 15
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<style type="text/css">
+	<style type="text/css">
 	
 
 	div{
@@ -11,26 +11,31 @@
 		border: 2px;
 		margin: 25px;
 	}
-</style>
+	</style>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	</head>
+</head>
 
 <body>
 	<h1>Head 1</h1>
 	<p>	Testing</p>
-	<p class="p2">	This is para 2</p>
+	<p class="c1">	This is para 2</p>
 	<p> Name</p><input type="text">
-	<ul>
+	<ul class="myList">
 		<li><a href="#">ONE</a></li>
 		<li><a href="#">TWO</a></li>
 		<li><a href="#">THREE</a></li>
+		<ul>
+			<li>1. first</li>
+			<li>2. two</li>
+		</ul>
 	</ul>
 	<div class="mydiv">
 		<h1>Header of mydiv</h1>
-	<p>	para in div</p>
-	<p class="p2">	This is para 2 of div</p>
-	<p> Address</p><input type="text">
-	<button>Call empty() on above paragraph</button>
+		<p>	para in div</p>
+		<p class="para2">	This is para 2 of div</p>
+		<p> Address</p><input type="text">
+		<button>Call empty() on above paragraph</button>
 
 	</div>
 	<div class="myForm">
@@ -41,12 +46,13 @@
 			<input type="text" name="name">
 			<!-- 
 			<input type="button" value="Input Button">
-   			 <input type="checkbox"> -->
+			<input type="checkbox"> -->
 
 		</form>
 	</div>
+	<button id="testbtn">Test button</button>
 	<img src="img.png">
-<script>
+	<script>
 // $('h1').css('color','red');
 // // $('ul li a:even').css('color','green');
 // $('h1').css('color','red');
@@ -58,34 +64,50 @@
 $('img').width('200px');
 // $('img').clone().appendTo(".mydiv");
 
-  $( "img" ).mouseenter(function(){
+// $( "img" ).mouseenter(function(){
 
 
-  	$('.mydiv h1').text("OMG! Mouse has entered! ")
-  });
-  $( "img" ).mouseleave(function(){
+// 	$('.mydiv h1').text("OMG! Mouse has entered! ")
+// });
+// $( "img" ).mouseleave(function(){
 
 
-  	$('.mydiv h1').text("thank god! mouse is gone!")
-  });
+// 	$('.mydiv h1').text("thank god! mouse is gone!")
+// });
 
-  $( ".mydiv" ).mouseenter(function(){
-
-
-  	$('.mydiv h1').text("OMG! Mouse has entered! ")
-  });
-  $( ".mydiv" ).mouseleave(function(){
+// $( ".mydiv" ).mouseenter(function(){
 
 
-  	$('.mydiv h1').text("thank god! mouse is gone!")
-  });
+// 	$('.mydiv h1').text("OMG! Mouse has entered! ")
+// });
+// $( ".mydiv" ).mouseleave(function(){
+
+
+// 	$('.mydiv h1').text("thank god! mouse is gone!")
+// });
 
   //new
-  $('button').click(function(){
+  // $('button').click(function(){
 
-  	$('p').empty().toggle();
+  // 	$('p').empty();
 
-  });
+  // });
+//new
+// $(document).ready(function(){
+
+// 	$('.callAjax').click(function(){
+
+// 		$('.p2').load("ajax.txt");
+// 		alert("ajax called");
+// 	});
+// });
+//new
+// $('button').click(function(){
+// 	$('img').hide(3000);
+// 	alert("this para will be gone");
+
+// });
+$('ul.myList').children('li').eq(1).prev().text('I am changed!');
 </script>
 </body>
 

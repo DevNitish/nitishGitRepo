@@ -1,0 +1,46 @@
+var express=require('express');
+var app =express();
+var server=require('http').createServer(app);
+var io=require('socket.io').listen(server);
+user=[];
+connections=[];
+
+server.listen(process.env.port||8080);
+console.log('Server started at 8080')
+app.get('/',function(req,res){
+	res.sendFile(__dirname+'/index.html')
+});
+
+
+//socket 
+io.sockets.on('connection', function(socket){
+	connections.push(socket);
+	console.log('connected : %s sockets connected ',connections.length);
+
+	//disconnect 
+	socket.on('disconnect',function(data){
+	//if(!socket.username) return;
+	users.splice(users,indexOf(socket.username),1);
+	updateUsernames();
+
+	connections.splice(connections.indexOf(socket),1);
+	console.log('disconected: %s sockets connected',connections.length);
+	
+	});
+	//send Message
+	socket.on('send message',function(data){
+		//console.log(data); data contains mssage
+		io.sockets.emit("new message",{msg:data,user:socket.username});
+	});
+
+	//new user
+	socket.on('new user',function(data,callback){
+		callback(true);
+		socket.username=data;
+		user.push(socket.username);
+		updateUsernames();
+	});
+	function updateUsernames(){
+		io.sockets.emit('get users',users);
+	}
+});

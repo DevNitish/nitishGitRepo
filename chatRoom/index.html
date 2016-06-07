@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  </head>
+  <body>
+   
+    <!-- for chat input -->
+            <div class="well" id="inputName">
+              Enter name<input type="text" id="username">
+              <br>
+              <input type="button" class="btn btn-primary" value="Enter" id="btnName">
+            </div>
+
+          <div id="allRooms" class="well">
+            <div class="row" id="selectRoom" class="well">
+                  <select id="btnRoom">
+                <option value="chatRoom1">chatRoom1</option>
+                <option value="chatRoom2">chatRoom2</option>
+                
+              </select>
+               <input type="button" class="btn btn-primary" id="btnSelect" value="Select">
+
+          <!-- <div class="col-md-6">
+            room1<input type="button" class="btn btn-primary" id="btnRoom"  value="chatRoom1">
+         
+          </div>
+           <div class="col-md-6">
+            
+          room2<input type="button" class="btn btn-danger" id="btnRoom" value="chatRoom2">
+          </div> -->
+
+        </div>
+        </div>
+ 
+        <!-- select chart room -->
+          
+          <div class="row well" id="room1">
+            <h3 >    Chat room 1</h3>
+             <!-- to display mssaages -->
+            <ul id="messages"></ul>
+             <form action="" id="room1Form">
+               <input id="m" autocomplete="off" /><button type="button" id="b1" onclick="submitForm('room1')">Send</button>
+             </form>
+
+          </div>
+          <!-- room1 ends -->
+          <div class="row well" id="room2">
+             <h3 >   Chat room 2</h3>
+              <!-- to display mssaages -->
+            <ul id="messages"></ul>
+
+            <form action="">
+               <input id="m" autocomplete="off"  /><button type="button" id="b2"onclick="submitForm('room2')">Send</button>
+             </form>
+            
+          </div>
+<!-- ==================================================================================================================================== -->
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        var socket=io.connect();
+        var $m=$('#m');
+        $("#b1").click(function(e){
+          e.preventDefault();
+        });
+        var roomin;
+                  function submitForm(rid){
+                    msg=$("#"+rid +" #m").val();
+                    $("#"+rid +" #m").val('');
+                      roomin=rid;
+                    socket.emit('updateChat',msg,rid);
+
+                    
+                    console.log("chat msg: "+msg+" room id: "+rid);
+                    return false;
+                     }
+
+                socket.on('updater',function(msg,username){
+              
+                console.log("msg from server: "+msg)
+                $('#'+roomin+' #messages').append($('<li>').text(username+":"+msg));
+                //$m.val('');
+                
+                  });
+
+                
+      
+      $(function(){
+        
+            var $room1=$("#room1");
+          var $room2=$('#room2');
+          var $inputName=$('#inputName');
+          
+          var $allRooms=$('#allRooms');
+          var $btnSelect=$('#btnSelect')
+          
+
+          var $username=$('#username');
+          var $btnName=$('#btnName');
+
+          var $btnRoom=$('#btnRoom');//select room name 
+
+
+          $allRooms.hide();
+          $room1.hide();
+          $room2.hide();
+
+          $btnName.click(function(){
+            //alert("You user name: "+$username.val());
+              $inputName.hide();
+             $allRooms.show(); 
+          });
+            
+          $btnSelect.click(function(){
+            $allRooms.hide();
+           socket.emit('username',$username.val());
+
+            if($btnRoom.val()=='chatRoom1'){
+              $room1.show();
+            } else if($btnRoom.val()=='chatRoom2'){
+               $room2.show();
+            
+            }
+
+          });
+          
+          //socket 
+              
+                    
+
+                  // function submitForm(id){
+                  //   msg=$('#'+id +" #m").val();
+                  //   socket.emit('chat message',msg,id);
+                  //   console.log("chat msg: "+msg+" room id: "+id);
+                  //    }
+
+              //   $('form').submit(function(){
+
+              //     socket.emit('sRoom',$btnRoom.val());
+
+              //     socket.emit('chat message', $('#m').val());
+              //     $('#m').val('');
+
+              //   return false;
+              // });
+
+
+              // socket.on('chat message', function(msg){
+              //   $('#messages').append($('<li>').text(msg));
+              // });
+
+
+      });//main function 
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <script data-require="angular.js@1.2.10" data-semver="1.2.10" src="http://code.angularjs.org/1.2.10/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <script src="app.js"></script>
+
+    <div class="container" ng-app="app">
+      <div  ng-controller="mainCtrl">
+
+    <h1>Test head: {{msg}}</h1>
+          
+      <a href="#" class="btn btn-primary">Home</a>
+      <a href="#about" class="btn btn-primary">About</a>
+      <a href="#detail" class="btn btn-primary">Detail</a>
+      <p>Starts here</p>
+      <div ng-view class="well">
+        {{msg}}
+
+      </div>
+      </div>
+    <div ng-include="'footer.html'"></div>
+
+    </div><!-- cointainer -->
+    
+  </body>
+
+</html>

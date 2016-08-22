@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="Todo">
+
+  <head>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+ <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+ 
+    <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="http://vitalets.github.io/angular-xeditable/dist/css/xeditable.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script src="http://vitalets.github.io/angular-xeditable/dist/js/xeditable.js"></script>
+
+
+  </head>
+
+  <body>
+<div class="row">
+    <div class="col-xs-12">
+    
+               <div class="row">
+    <div class="col-xs-12
+                col-sm-8
+                col-md-6
+                col-lg-4">
+        <div class="box">Responsive</div>
+    </div>
+</div>>
+        <div class="box">Responsive</div>
+    </div>
+</div>
+
+    <!-- <div ng-controller="CountCtrl">
+      <p>Part 1</p>
+    
+      <counter ng-repeat="m in mytasks"> </counter>
+    </div>
+      <div ng-controller="CountCtrl as vm">
+    <counter count="vm.count"></counter>
+    
+    </div> -->
+
+    <div ng-controller="mainCtrl">
+          <h1>Tasks {{nitish}}</h1>
+      <div ng-repeat="task in mytasks" >
+        <mycard task="task" />
+      </div>
+    </div>
+      <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    
+<!--     // <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    // <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+
+    // <script src="//ajax.googleapis.com/ajax/libs/angular_material/1.0.8/angular-material.min.js"></script>
+    
+    // <script src="//cdn.jsdelivr.net/angular-material-icons/0.7.0/angular-material-icons.min.js"></script>  -->
+  </body>
+
+</html>

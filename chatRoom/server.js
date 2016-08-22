@@ -17,13 +17,13 @@ app.get('/', function(req, res){
 
 	  	socket.on('updateChat',function(msg,roomid){
 
-		socket.join(roomid);
+		socket.join(roomid);//
 
 		io.to(roomid).emit('updater',msg,socket.uname);
 
 	  	//socket.emit('updater',"You have join room: "+roomid);
 
-	  		console.log("msg on server is: "+msg+" room id "+roomid);
+	  		//console.log("msg on server is: "+msg+" room id "+roomid);
 
 	  	});
 	

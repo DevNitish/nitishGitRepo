@@ -3,15 +3,12 @@
   <head>
     <title>Socket.IO chat</title>
     <style>
-
-
-    </style>
+        </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
   </head>
   <body>
-   
     <!-- for chat input -->
             <div class="well" id="inputName">
               Enter name<input type="text" id="username">
@@ -62,11 +59,11 @@
              </form>
             
           </div>
-<!-- ==================================================================================================================================== -->
+<!-- ========================================================================================================= -->
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
-        var socket=io.connect();
+        var socket=io();
         var $m=$('#m');
         $("#b1").click(function(e){
           e.preventDefault();
@@ -76,7 +73,7 @@
                     msg=$("#"+rid +" #m").val();
                     $("#"+rid +" #m").val('');
                       roomin=rid;
-                    socket.emit('updateChat',msg,rid);
+                    socket.emit('updateChat',msg,rid);//e
 
                     
                     console.log("chat msg: "+msg+" room id: "+rid);

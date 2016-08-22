@@ -1,0 +1,31 @@
+/* Styles go here */
+
+/* Styles go here */
+
+h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.actor-tile {
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px lightgray;
+  margin: 10px;
+  max-width: 150px;
+  float: left;
+}
+
+.actor-tile img {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.actor-tile button {
+  width: 100%;
+}

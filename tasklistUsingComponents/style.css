@@ -1,0 +1,32 @@
+
+#myBox{
+  {
+    background-color: lightgrey;
+    
+    padding: 25px;
+    border: 25px solid navy;
+    margin: 25px;
+}
+}
+.editStyle{
+      text-decoration: none;
+    color: white;
+    border-bottom: dashed 0px #428bca;
+}
+  /*for date picker*/
+  .datepickerdemoBasicUsage {
+  /** Demo styles for mdCalendar. */ }
+  .datepickerdemoBasicUsage md-content {
+    padding-bottom: 200px; }
+  .datepickerdemoBasicUsage .validation-messages {
+    font-size: 11px;
+    color: darkred;
+    margin: 2px 0 10px 25px; }
+    .dueDate{
+       font-size: 14px;
+    color: darkred;
+    border-radius: 5px ;
+    text-align: center;
+    margin-left: 5px ;
+    background-color: yellow;
+    }

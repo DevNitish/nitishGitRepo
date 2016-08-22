@@ -12,7 +12,13 @@ $stateProvider
 .state('home',{
   url:'/home',
   templateUrl:'home.html',
-  //controller:'homeCtrl'
+  controller:'homeCtrl',
+  resolve:{
+  	name:function($stateParams){
+  		$stateParams.name;
+
+  	}
+  }
   
 })
 .state('home.detail',{
@@ -23,7 +29,7 @@ $stateProvider
 })
 .state('home.detail.subdetails',{
 	url:'/subdetails',
-	template:'<h3>In subdetails:{{name}}</h3>'
+	template:'<h3>In subdetails:{{name}}'
 })
 }]);
 
